@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class area
+{
+private:
+    int length,breadth;
+public:
+    void set_dimensions(int l ,int b)
+    {
+        length=l;
+        breadth=b;
+    }
+int get_dimensions()
+    {
+    return length* breadth;
+}
+};
+int main()
+{
+    area a1;
+    int length,breadth;
+    cout<<" PZ ENTER TE LENGTH : "<<endl;
+    cin>>length;
+    cout<<" PLZ ENTER THE BREADTH : "<<endl;
+    cin>>breadth;
+    a1.set_dimensions(breadth,length) ;
+    cout<<"THE AREA OF THE RECTNGLE IS : "<<a1.get_dimensions()<<endl;
+    
+}
+
